@@ -1,22 +1,43 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+int main(){
+    printf("Desafio Super trunfo\n");
+    prinf("novo commit\n");
 
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+    char codigo_da_cidade;
+    char nome_da_cidade;
+    int  populacao;
+    float area;
+    float PIB;
+    int quantidade_pontos_turisticos;
+
+    printf("Digite o codigo da cidade; \n");
+    scanf(" %c", &codigo_da_cidade);
+
+    printf("Digite o nome da cidade; \n");
+    gatchar();
+    scanf(" %[ˆ\n]", nome_da_cidade);
+
+    printf("populacao; \n");
+    scanf(" %d", &populacao);
+
+    printf("Digite a area; \n");
+    scanf(" %f", &area);
+
+    printf("Digite o PIB; \n");
+    scanf(" %f", &PIB);
+
+    printf("Digite a quantidade de pontos turisticos; \n");
+    scanf(" %d", &quantidade_pontos_turisticos);
+
+    printf("\n--- Dados da Cidade Cadastrada ---\n");
+    printf("Codigo da Cidade: %c\n" , codigo_da_cidade);
+    printf("Nome da Cidade: %s\n" , nome_da_cidade);
+    printf("Populacao: %d\n" , populacao);
+    printf("Area da Cidade: %.2f km\n" , area);
+    printf("PIB da Cidade: %.2f milhoes\n" , PIB);
+    printf("Quandidade de Pontos Turisticos: %d\n" , quantidade_pontos_turisticos);
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
     return 0;
 }
