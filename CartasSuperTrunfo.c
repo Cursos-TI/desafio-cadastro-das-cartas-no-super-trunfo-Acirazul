@@ -5,29 +5,29 @@ int main(){
     prinf("novo commit\n");
 
     char codigo_da_cidade;
-    char nome_da_cidade;
+    char nome_da_cidade[20];
     int  populacao;
     float area;
     float PIB;
     int quantidade_pontos_turisticos;
 
-    printf("Digite o codigo da cidade; \n");
+    printf("Digite o codigo da cidade: \n");
     scanf(" %c", &codigo_da_cidade);
 
-    printf("Digite o nome da cidade; \n");
+    printf("Digite o nome da cidade: \n");
     gatchar();
     scanf(" %[ˆ\n]", nome_da_cidade);
 
-    printf("populacao; \n");
+    printf("populacao: \n");
     scanf(" %d", &populacao);
 
-    printf("Digite a area; \n");
+    printf("Digite a area: \n");
     scanf(" %f", &area);
 
-    printf("Digite o PIB; \n");
+    printf("Digite o PIB: \n");
     scanf(" %f", &PIB);
 
-    printf("Digite a quantidade de pontos turisticos; \n");
+    printf("Digite a quantidade de pontos turisticos: \n");
     scanf(" %d", &quantidade_pontos_turisticos);
 
     printf("\n--- Dados da Cidade Cadastrada ---\n");
@@ -37,7 +37,7 @@ int main(){
     printf("Area da Cidade: %.2f km\n" , area);
     printf("PIB da Cidade: %.2f milhoes\n" , PIB);
     printf("Quandidade de Pontos Turisticos: %d\n" , quantidade_pontos_turisticos);
-    
+
 
     return 0;
 }
