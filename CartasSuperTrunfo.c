@@ -2,7 +2,7 @@
 
 int main(){
     printf("Desafio Super trunfo\n");
-    prinf("novo commit\n");
+    printf("novo commit\n");
 
     char codigo_da_cidade;
     char nome_da_cidade[20];
@@ -15,7 +15,7 @@ int main(){
     scanf(" %c", &codigo_da_cidade);
 
     printf("Digite o nome da cidade: \n");
-    gatchar();
+    getchar();
     scanf(" %[ˆ\n]", nome_da_cidade);
 
     printf("populacao: \n");
