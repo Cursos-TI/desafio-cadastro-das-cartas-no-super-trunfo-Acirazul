@@ -16,7 +16,7 @@ int main(){
 
     printf("Digite o nome da cidade: \n");
     getchar();
-    scanf(" %[ˆ\n]", nome_da_cidade);
+    scanf(" %[^\n]", nome_da_cidade);
 
     printf("populacao: \n");
     scanf(" %d", &populacao);
