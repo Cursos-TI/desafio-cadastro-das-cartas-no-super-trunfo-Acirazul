@@ -18,6 +18,7 @@ int main() {
     // Entrada de dados
     printf("Digite o código da cidade: \n");
     scanf(" %c", &codigo_da_cidade);
+    getchar(); // <- limpar o buffer (resolve o problema com o nome da cidade)
 
     printf("Digite o nome da cidade: \n");
     scanf(" %[^\n]", nome_da_cidade);
