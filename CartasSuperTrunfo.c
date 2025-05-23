@@ -10,6 +10,8 @@ int main(){
     float area;
     float PIB;
     int quantidade_pontos_turisticos;
+    float densidade_populacional
+    float PIB_per_capita;
 
     printf("Digite o codigo da cidade: \n");
     scanf(" %c", &codigo_da_cidade);
@@ -29,6 +31,14 @@ int main(){
 
     printf("Digite a quantidade de pontos turisticos: \n");
     scanf(" %d", &quantidade_pontos_turisticos);
+    
+    float quociente =  populacao / area; 
+    printf(“Divisão: %.2f/n", divisao; // Divisão de pontos flutuantes 
+    
+    float quociente =  PIB / populacao; // Divisão de pontos flutuantes 
+    printf(“Divisão: %.2f/n", divisao);
+
+    scanf("%f”, &Densidade_Populacional);
 
     printf("\n--- Dados da Cidade Cadastrada ---\n");
     printf("Codigo da Cidade: %c\n" , codigo_da_cidade);
@@ -37,11 +47,9 @@ int main(){
     printf("Area da Cidade: %.2f km\n" , area);
     printf("PIB da Cidade: %.2f milhoes\n" , PIB);
     printf("Quandidade de Pontos Turisticos: %d\n" , quantidade_pontos_turisticos);
- 
-    printf(“Digite a Densidade Populacional: \n");
-    float quociente =  populacao / area; \\ Divisão de pontos flutuantes; 
-    printf (float) (“Divisão: %.2f/n", divisao);
-
+    printf("Densidade Populacional: %.2f milhoes\n" , densidade populacional);
+    printf("PIB per Capita: %.2f milhoes\n" , PIB per Capital);
+    
 
     return 0;
 
