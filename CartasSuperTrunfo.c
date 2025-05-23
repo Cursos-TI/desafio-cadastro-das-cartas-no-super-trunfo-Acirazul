@@ -5,7 +5,7 @@ int main() {
 
     // Declaração das variáveis
     char codigo_da_cidade;
-    char nome_da_cidade[50];
+    char nome_da_cidade[20];
     int populacao;
     float area;
     float PIB;
