@@ -37,7 +37,15 @@ int main(){
     printf("Area da Cidade: %.2f km\n" , area);
     printf("PIB da Cidade: %.2f milhoes\n" , PIB);
     printf("Quandidade de Pontos Turisticos: %d\n" , quantidade_pontos_turisticos);
+ 
+    float quociente =  populacao / area; // Divisão de pontos flutuantes 
+    printf(“Divisao: %.2f/n", divisao;
 
+    float quociente =  PIB / populacao; // Divisão de pontos flutuantes 
+    printf(“Divisão: %.2f/n", divisao);
+
+    scanf("%f”, &Densidade_Populacional);
 
     return 0;
+
 }
