@@ -16,22 +16,22 @@ int main() {
     float pib_per_capita;
 
     // Entrada de dados
-    printf("\nDigite o código da cidade: ");
+    printf("Digite o código da cidade: \n");
     scanf(" %c", &codigo_da_cidade);
 
-    printf("Digite o nome da cidade: ");
+    printf("Digite o nome da cidade: \n");
     scanf(" %[^\n]", nome_da_cidade);
 
-    printf("Digite a população: ");
+    printf("Digite a população: \n");
     scanf("%d", &populacao);
 
-    printf("Digite a área (em km²): ");
+    printf("Digite a área (em km²): \n");
     scanf("%f", &area);
 
-    printf("Digite o PIB (em milhões): ");
+    printf("Digite o PIB (em milhões): \n");
     scanf("%f", &PIB);
 
-    printf("Digite a quantidade de pontos turísticos: ");
+    printf("Digite a quantidade de pontos turísticos: \n");
     scanf("%d", &quantidade_pontos_turisticos);
 
     // Cálculos
