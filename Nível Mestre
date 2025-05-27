@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-typedef struct {
+int main() {
     char codigo;
     char nome[50];
     unsigned long int populacao;
