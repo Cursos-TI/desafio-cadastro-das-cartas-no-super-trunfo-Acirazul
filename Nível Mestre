@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 iint main() {
-    printf("Desafio Super Trunfo \n");
+    printf("Desafio Super Trunfo Mestre\n");
     char codigo;
     char nome[50];
     unsigned long int populacao;
