@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+main
+
 typedef struct {
     char codigo;
     char nome[50];
