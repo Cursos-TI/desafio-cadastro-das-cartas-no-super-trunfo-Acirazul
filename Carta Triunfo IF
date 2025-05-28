@@ -1,68 +1,54 @@
 #include <stdio.h>
 
-typedef struct {
-    char codigo;
-    char nome[50];
-    unsigned long int populacao;
-    float area;
-    float PIB;
-    int pontos_turisticos;
-    float densidade;
-    float pib_per_capita;
-    float super_poder;
-} Carta;
-
-void lerCarta(Carta *carta, int numero) {
-    printf("\n--- Entrada de dados da Carta %d ---\n", numero);
-
-    printf("Digite o código da cidade: ");
-    scanf(" %c", &carta->codigo);
-    getchar(); // Limpar buffer
-
-    printf("Digite o nome da cidade: ");
-    scanf(" %[^\n]", carta->nome);
-
-    printf("Digite a população: ");
-    scanf("%lu", &carta->populacao);
-
-    printf("Digite a área (em km²): ");
-    scanf("%f", &carta->area);
-
-    printf("Digite o PIB (em milhões): ");
-    scanf("%f", &carta->PIB);
-
-    printf("Digite a quantidade de pontos turísticos: ");
-    scanf("%d", &carta->pontos_turisticos);
-
-    // Cálculos
-    carta->densidade = carta->populacao / carta->area;
-    carta->pib_per_capita = carta->PIB / carta->populacao;
-    
-    // Cálculo do super poder
-    carta->super_poder = (float)carta->populacao + carta->area + carta->PIB
-                        + carta->pontos_turisticos + carta->pib_per_capita
-                        + (1.0f / carta->densidade);  // Inverso da densidade
-}
-
 int main() {
-    Carta carta1, carta2;
-
     printf("Desafio Super Trunfo\n");
 
-    // Leitura das duas cartas
-    lerCarta(&carta1, 1);
-    lerCarta(&carta2, 2);
+    // Declaração das variáveis
+    char codigo_da_cidade;
+    char nome_da_cidade[50];
+    int populacao;
+    float area;
+    float PIB;
+    int quantidade_pontos_turisticos;
 
-    // Comparações
-    printf("\n--- Comparação de Cartas ---\n");
+    // Novas variáveis calculadas
+    float densidade_populacional;
+    float pib_per_capita;
 
-    printf("População: Carta 1 venceu? %s\n", (carta1.populacao > carta2.populacao) ? "Sim" : "Não");
-    printf("Área: Carta 1 venceu? %s\n", (carta1.area > carta2.area) ? "Sim" : "Não");
-    printf("PIB: Carta 1 venceu? %s\n", (carta1.PIB > carta2.PIB) ? "Sim" : "Não");
-    printf("Pontos Turísticos: Carta 1 venceu? %s\n", (carta1.pontos_turisticos > carta2.pontos_turisticos) ? "Sim" : "Não");
-    printf("Densidade Populacional: Carta 1 venceu? %s\n", (carta1.densidade < carta2.densidade) ? "Sim" : "Não"); // Menor vence
-    printf("PIB per Capita: Carta 1 venceu? %s\n", (carta1.pib_per_capita > carta2.pib_per_capita) ? "Sim" : "Não");
-    printf("Super Poder: Carta 1 venceu? %s\n", (carta1.super_poder > carta2.super_poder) ? "Sim" : "Não");
+    // Entrada de dados
+    printf("Digite o código da cidade: \n");
+    scanf(" %c", &codigo_da_cidade);
+    getchar(); // <- limpar o buffer (resolve o problema com o nome da cidade)
+
+    printf("Digite o nome da cidade: \n");
+    scanf(" %[^\n]", nome_da_cidade);
+
+    printf("Digite a população: \n");
+    scanf("%d", &populacao);
+
+    printf("Digite a área (em km²): \n");
+    scanf("%f", &area);
+
+    printf("Digite o PIB (em milhões): \n");
+    scanf("%f", &PIB);
+
+    printf("Digite a quantidade de pontos turísticos: \n");
+    scanf("%d", &quantidade_pontos_turisticos);
+
+    // Cálculos
+    densidade_populacional = populacao / area;
+    pib_per_capita = PIB / populacao;
+
+    // Saída de dados
+    printf("\n--- Dados da Cidade Cadastrada ---\n");
+    printf("Código da Cidade: %c\n", codigo_da_cidade);
+    printf("Nome da Cidade: %s\n", nome_da_cidade);
+    printf("População: %d\n", populacao);
+    printf("Área da Cidade: %.2f km²\n", area);
+    printf("PIB da Cidade: %.2f milhões\n", PIB);
+    printf("Quantidade de Pontos Turísticos: %d\n", quantidade_pontos_turisticos);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade_populacional);
+    printf("PIB per Capita: %.2f\n", pib_per_capita);
 
     return 0;
 }
