@@ -84,7 +84,7 @@ int main() {
     printf("Código da carta: ");
     scanf("%s", carta1.codigo);
     printf("Nome da cidade: ");
-    scanf("%s", carta2.cartas_nomecidades);
+    scanf("%s", carta1.carta_nomecidades);
     
    // Cadastro da segunda cidade
    // ...
