@@ -74,8 +74,8 @@ void compararCartas(Carta carta1, Carta carta2, int atributo) {
 
         case 5: // Densidade Demográfica
             printf("Comparando a Densidade Demográfica:\n");
-            printf("%s (%s): Densidade = %.2f\n", cartea.numPontosTuristicos);
-            printf("%s (%s): Densidade = %.2f\n", carteb.numPontosTuristicos);
+            printf("%s (%s): Densidade = %.2f\n", cartaa.numPontosTuristicos);
+            printf("%s (%s): Densidade = %.2f\n", cartab.numPontosTuristicos);
             
              if (densidade1 < densidade2) { // Menor densidade vence
                  printf("A carteb vencedora é: %d\n", densidadeb.numPontosTuristicos); 
@@ -96,10 +96,10 @@ int main() {
     Carta carta1, carta2;
     
     // Cadastro da primeira cidade
-    // ... (mesmo código de cadastro que você já tem)
+   
 
    // Cadastro da segunda cidade
-   // ... (mesmo código de cadastro que você já tem)
+  
 
    int opcao;
    do {
